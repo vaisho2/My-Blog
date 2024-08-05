@@ -1,0 +1,1355 @@
+/* Added 0 margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header section starts */
+
+header {
+  /* set diplay to flex in vertical direction */
+  display: flex;
+  flex-direction: column;
+  /* sets content to center */
+  justify-content: center;
+  /* inserted bg image and set its position and gave it a size */
+  background-image: url("sunset.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* added some margin and padding */
+  margin: 10px 10px 0px 10px;
+  padding: 20px 0px 0px 0px;
+}
+
+/* Nav section */
+nav {
+  /* added a bg color and some margin and padding along with a black border on top */
+  background-color: #feeafa;
+  margin: 10px 0px 0px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid black;
+  /* set Lora font to the nav items and set diplay to flex in row direction to get horizontal nav bar */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  /* added flex wrap so items of nav can wrap to next line and spaced the items evenly */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+nav a {
+  /* set text decoration to none to style links and changed its color */
+  text-decoration: none;
+  color: grey;
+}
+
+/* changes the fonts size and text shadow when hovered over */
+#nava:hover {
+  text-shadow: 1px 1px 5px #f2cc8f;
+  font-size: large;
+}
+
+h1 {
+  /* styled the h1 text */
+  font-family: "Tangerine", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 90px;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgb(65, 60, 60);
+  /* added animation to h1 */
+  animation-name: animationMovement;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* divided animation into 5 intervals and styled each interval differently */
+@keyframes animationMovement {
+  0% {
+    color: #ffffff;
+  }
+  25% {
+    color: lightgoldenrodyellow;
+  }
+  50% {
+    color: lightslategray;
+  }
+  75% {
+    color: slategrey;
+  }
+  100% {
+    color: #000000;
+  }
+}
+
+/* set font to parisienne and added some weight,size to it & also added some margin padding */
+#headerpara {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* header section ends */
+
+/* Blog 1 starts */
+
+/* inserted a box with linear gradient colors */
+.blog1 {
+  width: 99%;
+  height: 100vh;
+  background-image: linear-gradient(#efd3d7, #dee2ff);
+  /* set position to relative making it closest position ancestor */
+  position: relative;
+  margin: 0px 10px;
+  /* set display to flex and aligned items in center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* provided z-index so it comes on top of the video added & set opacity for transperancy and overflow is hidden */
+  z-index: 1;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.b1 {
+  /* aligned text to center & added some shadow to it */
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+
+.b1 h2 {
+  /* sets font to tangerine & styled with different weight,size,color */
+  font-family: "tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 90px;
+  color: #ffffff;
+}
+
+.ladgharpara {
+  /* set display to inline-block so it behaves like inline element even being block element */
+  display: inline-block;
+  /* added color,font-family,size to text & also provided some margin to para */
+  color: #ffffff;
+  font-family: "Tangerine", cursive;
+  font-size: 50px;
+  margin: 50px;
+}
+
+/* set position to absolute and gave it a position, also provided z-index so it gets overlapped by box created above & made it a bit blur */
+.ladgharvideo {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+/* set diplay to grid with 2 columns & 1 row & added some margin & padding */
+.blog1-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0px 10px;
+  padding: 70px;
+}
+
+/* set diplay to grid with 2 columns & 1 row & added some margin */
+.blog1-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0px 10px;
+}
+
+/* set display to flex & alighned items to center, also set position to relative */
+.ladgharimg1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* set position to absolute & provided some width and height */
+.ladghar1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  height: 60%;
+}
+
+/* set position to absolute & provided some width and height */
+.ladghar2 {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  width: 50%;
+  height: 60%;
+}
+
+/*provided some width and height */
+.ladghar3 {
+  width: 50%;
+  height: 50%;
+}
+
+/* set some width,height & padding */
+.ladgharlist2 {
+  width: 80%;
+  height: 70%;
+  padding: 50px;
+}
+
+/* set diplay flex and centered the items */
+.ladgharimg2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* set font to tangerine and provide some weight,size to it, also added some margin & padding */
+h4 {
+  margin: 10px;
+  padding: 20px;
+  font-family: "tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+}
+
+/* set font to parisienne and provide some weight,size to it, also added some margin & padding */
+p {
+  margin: 10px;
+  padding: 20px;
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* added border & box shadow to all images */
+img {
+  border: 5px solid white;
+  box-shadow: 5px 5px 5px black;
+}
+
+/* applied hover effect to transform its scaling */
+img:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+/* Blog 2 starts */
+
+/* inserted a box with linear gradient colors */
+.blog2 {
+  width: 99%;
+  height: 100vh;
+  background-image: linear-gradient(#efd3d7, #dee2ff);
+  /* set position to relative making it closest position ancestor */
+  position: relative;
+  margin: 0px 10px;
+  /* set display to flex and aligned items in center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* provided z-index so it comes on top of the video added & set opacity for transperancy and overflow is hidden */
+  z-index: 1;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.b2 {
+  /* aligned text to center & added some shadow to it */
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+
+.b2 h2 {
+  /* sets font to tangerine & styled with different weight,size,color */
+  font-family: "tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 90px;
+  color: #ffffff;
+}
+
+.satarapara {
+  /* set display to inline-block so it behaves like inline element even being block element */
+  display: inline-block;
+  /* added color,font-family,size to text & also provided some margin to para */
+  color: #ffffff;
+  font-family: "Tangerine", cursive;
+  font-size: 50px;
+  margin: 50px;
+}
+
+/* set position to absolute and gave it a position, also provided z-index so it gets overlapped by box created above & made it a bit blur */
+.sataravideo {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+/* set diplay to grid with 2 columns & 1 row & added some margin & padding */
+.blog2-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0px 10px;
+  padding: 70px;
+}
+
+/* set diplay to grid with 2 columns & 1 row & added some margin */
+.blog2-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0px 10px;
+  padding: 70px;
+}
+
+/* set display to flex & alighned items to center, also set position to relative */
+.sataraimg1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* set position to absolute & provided some width and height */
+.satara1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  height: 60%;
+}
+
+/* set position to absolute & provided some width and height */
+.satara2 {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  width: 50%;
+  height: 60%;
+}
+
+/* provided some width and height */
+.satara3 {
+  width: 50%;
+  height: 50%;
+}
+
+/* set diplay flex & centered the items */
+.sataraimg2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Blog 3 starts */
+
+/* inserted a box with linear gradient colors */
+.blog3 {
+  width: 99%;
+  height: 100vh;
+  background-image: linear-gradient(#000000, #000000);
+  /* set position to relative making it closest position ancestor */
+  position: relative;
+  margin: 0px 10px;
+  /* set display to flex and aligned items in center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* provided z-index so it comes on top of the video added & set opacity for transperancy and overflow is hidden */
+  z-index: 1;
+  opacity: 0.9;
+  overflow: hidden;
+}
+
+.b3 {
+  /* aligned text to center & added some shadow to it */
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+
+.b3 h2 {
+  /* sets font to tangerine & styled with different weight,size,color */
+  font-family: "tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 90px;
+  color: #ffffff;
+}
+
+.keralapara {
+  /* set display to inline-block so it behaves like inline element even being block element */
+  display: inline-block;
+  /* added color,font-family,size to text & also provided some margin to para */
+  color: #ffffff;
+  font-family: "Tangerine", cursive;
+  font-size: 50px;
+  margin: 50px;
+}
+
+/* set position to absolute and gave it a position, also provided z-index so it gets overlapped by box created above & made it a bit blur */
+.keralavideo {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+/* set diplay to grid with 2 columns & 1 row & added some margin & padding */
+.blog3-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0px 10px;
+  padding: 50px;
+}
+
+/* set diplay to grid with 2 columns & 1 row & added some margin */
+.blog3-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0px 10px;
+  padding: 50px;
+}
+
+/* set display to flex & alighned items to center, also set position to relative */
+.keralaimg1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* set position to absolute & provided some width and height */
+.kerala1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  height: 60%;
+}
+
+/* set position to absolute & provided some width and height */
+.kerala2 {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  width: 50%;
+  height: 60%;
+}
+
+/* set position to relative & diplay flex & centered the items */
+.keralaimg2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* set position to absolute & provided some width and height */
+.kerala3 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  height: 60%;
+}
+
+/* set position to absolute & provided some width and height */
+.kerala4 {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  width: 50%;
+  height: 60%;
+}
+
+/* Blog 4 starts */
+
+/* inserted a box with linear gradient colors */
+.blog4 {
+  width: 99%;
+  height: 100vh;
+  background-image: linear-gradient(#000000, #000000);
+  /* set position to relative making it closest position ancestor */
+  position: relative;
+  margin: 0px 10px;
+  /* set display to flex and aligned items in center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* provided z-index so it comes on top of the video added & set opacity for transperancy and overflow is hidden */
+  z-index: 1;
+  opacity: 8;
+  overflow: hidden;
+}
+
+.b4 {
+  /* aligned text to center & added some shadow to it */
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+
+.b4 h2 {
+  /* sets font to tangerine & styled with different weight,size,color */
+  font-family: "tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 90px;
+  color: #ffffff;
+}
+
+.vangoghpara {
+  /* set display to inline-block so it behaves like inline element even being block element */
+  display: inline-block;
+  /* added color,font-family,size to text & also provided some margin to para */
+  color: #ffffff;
+  font-family: "Tangerine", cursive;
+  font-size: 50px;
+  margin: 50px;
+}
+
+/* set position to absolute and gave it a position, also provided z-index so it gets overlapped by box created above & made it a bit blur */
+.vangoghvideo {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+/* set position to absolute and gave it a position, also provided z-index so it gets overlapped by box created above & made it a bit blur */
+#vanvideo {
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 5px 5px 5px black;
+}
+
+/* set diplay to grid with 2 columns & 1 row & added some margin & padding */
+.blog4-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0px 10px;
+  padding: 50px;
+}
+
+/* set diplay to grid with 2 columns & 1 row & added some margin */
+.blog4-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0px 10px;
+  padding: 60px;
+}
+
+/* set display to flex & alighned items to center, also set position to relative */
+.vangoghimg1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* set position to absolute & provided some width and height */
+.vangogh1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  height: 60%;
+}
+
+/* set position to absolute & provided some width and height */
+.vangogh2 {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  width: 50%;
+  height: 60%;
+}
+
+/* provided width & height */
+.vangogh3 {
+  width: 50%;
+  height: 50%;
+}
+
+/* set display flex and centered the items */
+.vangoghimg2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* set display flex and centered the items */
+.vangoghlist1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About Me section starts */
+
+/* set diplay grid with 2 columns & 1 row, also applied border with border radius, margin & bg color */
+#about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin: 20px 300px;
+  background-color: #ffe5d9;
+}
+
+/* set font to tangerine & applied some weight,size,style along with shadow & padding */
+h2 {
+  font-family: "tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 90px;
+  color: #000000;
+  text-shadow: 2px 2px 5px black;
+  padding: 50px;
+}
+
+/* Footer section starts here */
+
+/* set display to grid with 2 columns & 2 rows, also applied height & bg color to it */
+footer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  background-color: #cbc0d3;
+}
+
+/* set display to flex & cetered the items */
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Contact section starts here */
+
+/* set contact in very first grid-cell & applied some padding */
+#contact {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  padding: 10%;
+}
+
+/* applied margin & padding */
+#contact h2 {
+  padding: 1%;
+  margin: 0;
+}
+
+/* removed any border & box-shadow */
+.contact2 img {
+  border: none;
+  box-shadow: none;
+}
+
+/* set font to lora & applied some weight,style,size */
+label {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* applied border radius to curve the edges */
+input {
+  border-radius: 5px;
+}
+
+/* applied border radius to curve the edges & some padding */
+textarea {
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* applied padding & bg color */
+#submit {
+  padding: 20px;
+  background-color: #ffedd8;
+}
+
+/* applied hover effect to change border-radius & bg color */
+#submit:hover {
+  background-color: #f2d492;
+  border-radius: 30%;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+/* added margin to top */
+form {
+  margin-top: 20px;
+}
+
+/* Socials section starts here */
+
+#social {
+  /* puts social in second grid cell of 1st row */
+  grid-row-start: 1;
+  grid-column: 2/3;
+  /* set diplay to block & added position to relative & applied some padding */
+  padding: 5%;
+  display: block;
+  position: relative;
+}
+
+/* set position absolute & display flex in vertical direction */
+.socials {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 35%;
+  left: 15%;
+}
+
+/* set decoration to none & set font to lora, set its size & changed color */
+.socials a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lora", serif;
+  font-size: 20px;
+}
+
+/* set font-size,color & applied margin */
+.fa-brands,
+.fa-solid {
+  font-size: 30px;
+  color: black;
+  margin: 10px 10px;
+}
+
+/* copyright section starts here */
+
+/* applied bg color & border at top, overflow is hidden, puts copyright section in second row */
+#copyright {
+  grid-row-start: 2;
+  grid-column: 1/3;
+  background-color: slategrey;
+  overflow: hidden;
+  border-top: 1px solid black;
+}
+
+/* applied margin & padding */
+#copyright p {
+  margin: 0;
+  padding: 30px;
+}
+
+/* Adding media queries to make website reponsive */
+
+/* if maximum width of device is 425px or less then this query applies to it */
+@media (max-width: 425px) {
+
+  /* changed font-size */
+  h1 {
+    font-size: 35px;
+  }
+
+  /* changed font-size */
+  #headerpara {
+    font-size: 17px;
+  }
+
+  /* changed height & width */
+  .blog1 {
+    width: 94%;
+    height: 100%;
+  }
+
+  /* changed height & width of video */
+  .ladgharvideo {
+    height: 100%;
+    width: auto;
+  }
+
+  /* changed font-size & padding */
+  .b1 h2 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  /* changed font-size & margin */
+  .ladgharpara {
+    font-size: 25px;
+    margin: 0px 15px 15px 15px;
+  }
+
+  /* removed the list styling-the bullets */
+  .ladgharlist1 ul {
+    list-style: none;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog1-2 {
+    padding: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.25fr;
+  }
+
+  /* removed the list styling-the bullets */
+  .ladgharlist2 ul {
+    list-style: none;
+  }
+
+  /* changed width & height of grid-cells */
+  .blog1-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+  }
+
+  /* changed height & width, padding */
+  .ladgharlist2 {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  }
+
+  /* changed height & width */
+  .blog2 {
+    width: auto;
+    height: 100%;
+  }
+
+  /* changed height & width */
+  .sataravideo {
+    height: 100%;
+    width: auto;
+  }
+
+  /* changed font-size & padding */
+  .b2 h2 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  /* changed font-size & margin */
+  .satarapara {
+    font-size: 25px;
+    margin: 0px 15px 15px 15px;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog2-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.25fr;
+    padding: 0;
+  }
+
+  /* removed the list styling-the bullets */
+  .sataralist1 ul{
+    list-style: none;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog2-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    padding: 0;
+  }
+
+  /* removed the list styling-the bullets */
+  .sataralist2 ul{
+    list-style: none;
+  }
+
+  /* changed height & width */
+  .blog3 {
+    width: auto;
+    height: 100%;
+  }
+
+  /* changed height & width of video */
+  .keralavideo {
+    height: 100%;
+    width: auto;
+  }
+
+  /* changed font-size & padding */
+  .b3 h2 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  /* changed font-size & margin */
+  .keralapara {
+    font-size: 25px;
+    margin: 0px 15px 15px 15px;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog3-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.25fr;
+    padding: 0;
+  }
+
+  /* removed the list styling-the bullets */
+  .keralalist1 ul{
+    list-style: none;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog3-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    padding: 0;
+  }
+
+  /* removed the list styling-the bullets */
+  .keralalist2 ul{
+    list-style: none;
+  }
+
+  /* changed height & width */
+  .blog4 {
+    width: auto;
+    height: 100%;
+  }
+
+  /* changed height & width */
+  .vangoghvideo {
+    height: 100%;
+    width: auto;
+  }
+
+  /* changed font-size & padding */
+  .b4 h2 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  /* changed font-size & margin */
+  .vangoghpara {
+    font-size: 25px;
+    margin: 0px 15px 15px 15px;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog4-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.25fr;
+    padding: 0;
+  }
+
+  /* removed the list styling-the bullets */
+  .vangoghlist1 ul{
+    list-style: none;
+  }
+
+  /* removed the list styling-the bullets */
+  .vangoghist2 ul{
+    list-style: none;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog4-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    padding: 0;
+  }
+
+  /* changed margin & width & height of grid-cells */
+  #about{
+    margin: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+  }
+
+  /* changed padding */
+  .aboutme h2{
+    padding: 20px;
+  }
+
+  /* changed margin,height & width & height of grid-cells */
+  .footer{
+    height: auto;
+    margin: 10px;
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr
+  }
+
+  /* changed position of item & also aligned to center */
+  #contact{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+  }
+
+  /* changed display to block */
+  .box{
+    display: block;
+  }
+
+  /* changed padding & aligned items to center */
+  .box h2{
+    padding: 0;
+    text-align: center;
+  }
+
+  /* changed font-size */
+  label{
+    font-size: 20px;
+  }
+
+  /* changed padding */
+  .contact2 img{
+    padding: 0;
+  }
+
+  /* changed padding */
+  h2{
+    padding-top: 0px;
+    padding-left: 85px;
+  }
+
+  /* changed position of items */
+  #social{
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+
+  /* changed left alignment */
+  .socials{
+    left: 8%;
+  }
+
+  /* changed font-size */
+  .socials a{
+    font-size: 12px;
+  }
+
+  /* changed position of items */
+  #copyright{
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+  
+}
+
+/* if maximum width of device is 768px & minimum-width is 426px then this query applies to it */
+@media (max-width: 768px) and (min-width: 426px) {
+  /* changed font-size */
+  h1 {
+    font-size: 50px;
+  }
+
+  /* changed font-size */
+  #headerpara {
+    font-size: 23px;
+  }
+
+  /* changed height & width */
+  .ladgharvideo {
+    height: auto;
+    width: 100%;
+  }
+
+  /* changed height & width */
+  .blog1 {
+    width: 94%;
+    height: 100%;
+  }
+
+  /* changed font-size & padding */
+  .b1 h2 {
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  /* changed font-size & margin */
+  .ladgharpara {
+    font-size: 28px;
+    margin: 0px 15px 15px 15px;
+  }
+
+  /* removed the list styling-the bullets */
+  .ladgharlist1 ul {
+    list-style: none;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog1-2 {
+    padding: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+  }
+
+  /* removed the list styling-the bullets */
+  .ladgharlist2 ul {
+    list-style: none;
+  }
+
+  /* changed width & height of grid-cells */
+  .blog1-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  /* changed height & width, padding */
+  .ladgharlist2 {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  }
+
+  /* changed height & width */
+  .blog2 {
+    width: auto;
+    height: 100%;
+  }
+
+  /* changed height & width */
+  .sataravideo {
+    height: auto;
+    width: 100%;
+  }
+
+  /* changed font-size & padding */
+  .b2 h2 {
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  /* changed font-size & margin */
+  .satarapara {
+    font-size: 28px;
+    margin: 0px 15px 15px 15px;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog2-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    padding: 0;
+  }
+
+  /* removed the list styling-the bullets */
+  .sataralist1 ul{
+    list-style: none;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog2-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    padding: 0;
+  }
+
+  /* removed the list styling-the bullets */
+  .sataralist2 ul{
+    list-style: none;
+  }
+
+  /* changed height & width */
+  .blog3 {
+    width: auto;
+    height: 100%;
+  }
+
+  /* changed height & width */
+  .keralavideo {
+    height: auto;
+    width: 100%;
+  }
+
+  /* changed font-size & padding */
+  .b3 h2 {
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  /* changed font-size & margin */
+  .keralapara {
+    font-size: 28px;
+    margin: 0px 15px 15px 15px;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog3-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    padding: 0;
+  }
+
+  /* removed the list styling-the bullets */
+  .keralalist1 ul{
+    list-style: none;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog3-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    padding: 0;
+  }
+
+  /* removed the list styling-the bullets */
+  .keralalist2 ul{
+    list-style: none;
+  }
+
+  /* changed height & width */
+  .blog4 {
+    width: auto;
+    height: 100%;
+  }
+
+  /* changed height & width */
+  .vangoghvideo {
+    height: auto;
+    width:100%;
+  }
+
+  /* changed font-size & padding */
+  .b4 h2 {
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  /* changed font-size & margin */
+  .vangoghpara {
+    font-size: 28px;
+    margin: 0px 15px 15px 15px;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog4-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    padding: 0;
+  }
+
+  /* removed the list styling-the bullets */
+  .vangoghlist1 ul{
+    list-style: none;
+  }
+
+  /* removed the list styling-the bullets */
+  .vangoghist2 ul{
+    list-style: none;
+  }
+
+  /* changed padding & width & height of grid-cells */
+  .blog4-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    padding: 0;
+  }
+
+  /* changed margin & width & height of grid-cells */
+  #about{
+    margin: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  /* changed padding */
+  .aboutme h2{
+    padding: 20px;
+  }
+
+  /* changed margin,height & width & height of grid-cells */
+  .footer{
+    height: auto;
+    margin: 10px;
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr
+  }
+
+  /* changed position of item & also aligned to center */
+  #contact{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+  }
+
+  /* changed display to block */
+  .box{
+    display: block;
+  }
+
+  /* changed padding & aligned items to center */
+  .box h2{
+    padding: 0;
+    text-align: center;
+  }
+
+  /* changed font-size */
+  label{
+    font-size: 20px;
+  }
+
+  /* changed padding */
+  .contact2 img{
+    padding: 0;
+  }
+
+  /* changed padding */
+  h2{
+    padding-top: 0px;
+    padding-left: 85px;
+  }
+
+  /* changed position of items */
+  #social{
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+
+  /* changed left alignment */
+  .socials{
+    left: 8%;
+  }
+
+  /* changed font-size */
+  .socials a{
+    font-size: 12px;
+  }
+
+  /* changed position of items */
+  #copyright{
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+  
+}
